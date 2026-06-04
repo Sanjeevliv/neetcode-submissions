@@ -10,7 +10,7 @@ class Solution:
         self.balanced=True
 
         def dfs(root):
-            if not root:
+            if not root or not self.balanced:
                 return 0
             
             left = dfs(root.left)
